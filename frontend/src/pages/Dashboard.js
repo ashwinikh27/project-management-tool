@@ -1,12 +1,24 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 function Dashboard() {
+
+  const navigate = useNavigate();
+
   return (
+
     <div>
+
       <h2>Dashboard</h2>
-      <p>Welcome to Project Management Tool</p>
+
+      <button onClick={() => navigate("/projects")}>
+        Manage Projects
+      </button>
+
     </div>
+
   );
+
 }
 
 export default Dashboard;
